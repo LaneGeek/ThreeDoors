@@ -23,10 +23,6 @@ class SecondActivity : AppCompatActivity() {
         acceptButton.text = "Accept ${prize}"
         rejectButton.text = "Reject ${prize}"
 
-        val winner = Intent()
-        winner.putExtra("prize", "Goat")
-        setResult(Activity.RESULT_OK, winner)
-
         acceptButton.setOnClickListener {
             endActivity("accepted", prize)
         }
